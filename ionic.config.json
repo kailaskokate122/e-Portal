@@ -1,0 +1,7 @@
+{
+  "name": "eportal",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

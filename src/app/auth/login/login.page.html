@@ -1,0 +1,45 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content padding>
+    <!-- color="primary" -->
+
+    <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
+        <form [formGroup]="loginForm" (ngSubmit)="login()" class="login-form">
+            <ion-grid>
+                <ion-row color="primary" justify-content-center>
+                    <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                        <div text-center class="item-center" center>
+                            <img src="../../../assets/logo1.png" height="80" />
+                        </div>
+                        <br />
+                        <div padding class="ion-margin-top">
+
+                            <ion-item class="rounded">
+                                <ion-input formControlName="username" name="username" placeholder="UserName" type="text"></ion-input>
+                            </ion-item>
+
+                            <ion-item class="rounded">
+                                <ion-input formControlName="password" name="password" placeholder="Password" type="password"></ion-input>
+                            </ion-item>
+
+                        </div>
+                        <div padding class="ion-margin-top">
+                            <ion-button text-capitalize="false" shape="round" class="login-btn" color="secondary" type="submit" expand="block">Log In</ion-button>
+                            <!-- [disabled]="form.invalid" -->
+                        </div>
+                        <div class="error-msg" *ngIf="errorMsg==true">
+                            There was a problem logging in. Check your email and password or create an account.
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </form>
+    </div>
+
+
+
+</ion-content>

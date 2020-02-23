@@ -1,0 +1,54 @@
+// ion-item {
+//     --background: #3880ff;
+//     --color: #fff;
+// }
+// ion-button {
+//     --background: #062f77;
+// }
+//https://www.eggradients.com/category/black-gradient
+.r {
+    border: 1px solid red;
+}
+
+ion-content {
+    --ion-background-color: #485461;
+    --ion-background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.item-center {
+    text-align: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 360px;
+}
+
+.rounded {
+    width: 100%;
+    border-radius: 20px;
+}
+
+ion-item {
+    --ion-background-color: #fff;
+    margin-bottom: 15px;
+}
+
+ion-item.item {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.login-btn {
+    height: 45px;
+}
+
+.error-msg {
+    background-color: #faebeb;
+    border-color: transparent;
+    color: #521822;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+    border: 1px solid transparent;
+}
